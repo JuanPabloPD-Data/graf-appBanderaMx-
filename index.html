@@ -13,58 +13,55 @@
 </head>
 <body>
 
-<div class="container text-center mt-4">
+<div class="container py-5 text-center">
 
-    <h1 class="mb-5">Bandera de México</h1>
+    <h1 class="mb-4 titulo">Bandera de México</h1>
 
-    <div class="row justify-content-center mb-4">
+    <!-- Controles -->
+    <div class="row mb-4 justify-content-center">
 
-        <!-- Verde -->
         <div class="col-md-4">
-            <label class="form-label fw-bold">Esperanza</label>
+            <label class="form-label fw-bold text-success">Verde (Esperanza)</label>
             <input type="range" class="form-range" id="greenRange" min="0" max="255" value="128">
-            <p id="greenHex">#000000</p>
+            <p id="greenHex">#008000</p>
         </div>
 
-        <!-- Blanco -->
         <div class="col-md-4">
-            <label class="form-label fw-bold">Unidad</label>
+            <label class="form-label fw-bold">Blanco (Unidad)</label>
             <p class="fw-bold">#FFFFFF</p>
         </div>
 
-        <!-- Rojo -->
         <div class="col-md-4">
-            <label class="form-label fw-bold">Sangre de nuestros héroes nacionales</label>
+            <label class="form-label fw-bold text-danger">Rojo (Sangre)</label>
             <input type="range" class="form-range" id="redRange" min="0" max="255" value="255">
-            <p id="redHex">#000000</p>
+            <p id="redHex">#FF0000</p>
         </div>
 
     </div>
 
     <!-- Bandera -->
-    <div class="row justify-content-center">
-        <div class="col-md-3 flag green" id="greenFlag"></div>
-        <div class="col-md-3 flag white d-flex justify-content-center align-items-center">
-            <div class="escudo">
+    <div class="bandera-wrapper mx-auto">
+
+        <div class="bandera">
+
+            <div class="franja" id="greenFlag"></div>
+
+            <div class="franja blanca d-flex justify-content-center align-items-center">
                 <img src="img/escudo.png" alt="Escudo Nacional" class="escudo-img">
             </div>
+
+            <div class="franja" id="redFlag"></div>
+
         </div>
-        <div class="col-md-3 flag red" id="redFlag"></div>
+
     </div>
-    <!-- Datos de los alumnos -->
-<div class="row justify-content-center mt-4">
-    <div class="col-md-8">
-        <p class="fw-semibold mb-1">
-            Pérez Díaz Juan Pablo - 23200938
-        </p>
-        <p class="fw-semibold mb-1">
-            Reyes Azpiroz Carlos - 23200557
-        </p>
-        <p class="fw-semibold">
-            Ríos Rivera Eduardo Yarel - 23200889
-        </p>
+
+    <!-- Nombres -->
+    <div class="mt-4 nombres">
+        <p>Pérez Díaz Juan Pablo - 23200938</p>
+        <p>Reyes Azpiroz Carlos - 23200557</p>
+        <p>Ríos Rivera Eduardo Yarel - 23200889</p>
     </div>
-</div>
 
 </div>
 
