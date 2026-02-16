@@ -1,0 +1,24 @@
+body {
+    background-color: #f2f2f2;
+}
+
+.flag {
+    height: 300px;
+}
+
+.green {
+    background-color: #008000;
+}
+
+.white {
+    background-color: #FFFFFF;
+}
+
+.red {
+    background-color: #FF0000;
+}
+
+.escudo-img {
+    max-width: 70%;
+    height: auto;
+}
